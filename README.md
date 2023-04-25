@@ -7,4 +7,5 @@ Before search
 
 <br/>
 After search
+<br/>
 ![weather_search](https://user-images.githubusercontent.com/126813107/234432460-37998c52-35e1-410f-86ff-2f1fabe5eae2.JPG)
