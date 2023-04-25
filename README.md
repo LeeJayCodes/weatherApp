@@ -1,6 +1,12 @@
 # weatherApp
 Simple Weather App that shows current weather for any location.
 
+#Made with
+HTML, CSS, Javasctip
+
+#API
+OpenWeather API
+
 Before search
 <br/>
 ![weather app home](https://user-images.githubusercontent.com/126813107/234432459-fb535589-8be3-4794-8378-60ee7a8a7fa6.JPG)
