@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+    --fs-texts: clamp(1em,1.5vw, 2em);
+    --fs-header: clamp(1.5em, 2vw, 2.5em);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #1C315E;
+}
+
+p {
+    font-size: var(--fs-texts);
+    margin-bottom: 0.5rem;
+}
+.appbox {
+    background: rgba(255,255,255,1);
+    border: 1px black solid;
+    border-radius: 40px;
+    width: 40vw;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease-in;
+    overflow: hidden;
+}
+
+.search_wrapper{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.search_bar{
+    outline: none;
+    border: none;
+    font-size: var(--fs-texts);
+}
+
+.search_btn{
+    font-size: var(--fs-texts);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+h3{
+    font-size: var(--fs-header)
+}
+
+.weather_icon {
+    width: 35%;
+}
+
+.weather_wrapper {
+    margin: 1rem;
+    display: none;
+}
+
+.city {
+    text-transform: capitalize;
+}
+
+.status {
+    text-transform: capitalize;
+}
+
+.flex-wrapper {
+    margin-top: 1rem;
+    font-size: var(--fs-texts);
+    display: flex;
+    justify-content: space-around;
+}
+
+#Capa_1 {
+    color: blue;
+}
+
+.appbox.height{
+    height:auto;
+}
+
+.weather_wrapper.show{
+    display: block;
+}
+
+.search_wrapper.position{
+    margin-top: 1rem;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    
+}
+
+@media (max-width: 1000px) {
+    .appbox {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .appbox {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .appbox {
+        width: 100vw;
+    }
+}
