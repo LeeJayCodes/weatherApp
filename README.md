@@ -6,7 +6,7 @@ Simple Weather App that shows current weather for any location.
 <div>
 HTML, CSS, JavaScript
 </div>
-
+<br/>
 #API
 OpenWeather API
 
