@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root{
-    --fs-search: clamp(1em,1.5vw, 2em);
-    --fs-header: clamp(1.5em, 2vw, 2.5em)
+    --fs-texts: clamp(1em,1.5vw, 2em);
+    --fs-header: clamp(1.5em, 2vw, 2.5em);
 }
 
 * {
@@ -9,11 +11,19 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto Mono', monospace;
+}
 body {
     height: 100vh;
     margin: 0 auto;
     align-items: center;
     background-color: #1C315E;
+}
+
+p {
+    font-size: var(--fs-texts);
+    margin-bottom: 0.5rem;
 }
 .appbox {
     background: rgba(255,255,255,1);
@@ -38,17 +48,17 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 .search_bar{
     outline: none;
     border: none;
-    font-size: var(--fs-search);
+    font-size: var(--fs-texts);
 }
 
 .search_btn{
-    font-size: var(--fs-search);
+    font-size: var(--fs-texts);
     border: none;
     outline: none;
     border-radius: 20px;
@@ -63,7 +73,7 @@ h3{
 }
 
 .weather_wrapper {
-    margin: 1em;
+    margin: 1rem;
     display: none;
 }
 
@@ -75,9 +85,16 @@ h3{
     text-transform: capitalize;
 }
 
+.flex-wrapper {
+    margin-top: 1rem;
+    font-size: var(--fs-texts);
+    display: flex;
+    justify-content: space-around;
+}
 
-
-
+#Capa_1 {
+    color: blue;
+}
 
 .appbox.height{
     height:auto;
@@ -88,7 +105,7 @@ h3{
 }
 
 .search_wrapper.position{
-    margin-top: 1em;
+    margin-top: 1rem;
     position: static;
     top: 0;
     left: 0;
