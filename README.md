@@ -1,8 +1,9 @@
 # WeatherApp
 Simple Weather App that shows current weather for any location.
 
+
 #Made with
-<div align="center">
+<div>
 HTML, CSS, JavaScript
 </div>
 
